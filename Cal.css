@@ -1,0 +1,70 @@
+body{
+    justify-content: center;
+    align-items: center;
+    min-height: 97vh;
+    background: #000;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.bCal{
+    width: 240px;
+    height: 550px;
+    background: #000;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.bCal .bCal-keys input{
+    width: 96%;
+    height: 10vh;
+    margin-top: 23vh;
+    border: none;
+    outline: none;
+    background: none;
+    position: relative;
+    color: #fff;
+    text-align: right;
+    vertical-align: bottom;
+    padding: 0 10px;
+    font-size: 2em;
+}
+.btn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    margin-top: 16px;
+}
+.bCal .bCal-keys button{
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #222;
+    color: #fff;
+    font-size: large;
+}
+.bCal .bCal-keys .btn #zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 30px;
+}
+.bCal .bCal-keys button:hover{
+    background: #000;
+}
+#blank{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    width: 105px;
+    height: 4px;
+    margin-top: 20px;
+    border-radius: 50px;
+    margin-left: 57px;
+    pointer-events: none;
+}
